@@ -63,14 +63,13 @@
 <div class="container">
     <h2>Test</h2>
 
-    <!-- FIX: label пов'язаний з input -->
+
     <label for="input">Name/Value Pair</label>
     <div class="row">
         <input id="input" placeholder="name=value" />
         <button onclick="addPair()">Add</button>
     </div>
 
-    <!-- FIX: label пов'язаний з select -->
     <label for="list" style="margin-top:10px; display:block;">
         Name/Value Pair List
     </label>
@@ -143,7 +142,7 @@
     function deleteSelected() {
         const list = document.getElementById('list');
 
-        // FIX: перетворюємо назад у number
+
         const selected = Array.from(list.selectedOptions)
             .map(o => parseInt(o.value, 10));
 
